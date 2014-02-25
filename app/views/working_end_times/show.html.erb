@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @working_end_time.client_id %>
+</p>
+
+<p>
+  <strong>Monday:</strong>
+  <%= @working_end_time.monday %>
+</p>
+
+<p>
+  <strong>Tuesday:</strong>
+  <%= @working_end_time.tuesday %>
+</p>
+
+<p>
+  <strong>Wednesday:</strong>
+  <%= @working_end_time.wednesday %>
+</p>
+
+<p>
+  <strong>Friday:</strong>
+  <%= @working_end_time.friday %>
+</p>
+
+<p>
+  <strong>Satruday:</strong>
+  <%= @working_end_time.satruday %>
+</p>
+
+<p>
+  <strong>Sunday:</strong>
+  <%= @working_end_time.sunday %>
+</p>
+
+<%= link_to 'Edit', edit_working_end_time_path(@working_end_time) %> |
+<%= link_to 'Back', working_end_times_path %>

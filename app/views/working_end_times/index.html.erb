@@ -1,0 +1,39 @@
+<h1>Listing working_end_times</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Client</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Friday</th>
+      <th>Satruday</th>
+      <th>Sunday</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @working_end_times.each do |working_end_time| %>
+      <tr>
+        <td><%= working_end_time.client_id %></td>
+        <td><%= working_end_time.monday %></td>
+        <td><%= working_end_time.tuesday %></td>
+        <td><%= working_end_time.wednesday %></td>
+        <td><%= working_end_time.friday %></td>
+        <td><%= working_end_time.satruday %></td>
+        <td><%= working_end_time.sunday %></td>
+        <td><%= link_to 'Show', working_end_time %></td>
+        <td><%= link_to 'Edit', edit_working_end_time_path(working_end_time) %></td>
+        <td><%= link_to 'Destroy', working_end_time, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Working end time', new_working_end_time_path %>
