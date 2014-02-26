@@ -1,4 +1,5 @@
 DemoApp::Application.routes.draw do
+  match "clients/:id/edit_time", :to => "clients#edit_time", :as => "edit_time", via: :get
   resources :working_end_times
 
   resources :working_start_times
